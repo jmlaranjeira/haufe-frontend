@@ -1,0 +1,9 @@
+* {
+  font-family: Helvetica, Arial, Helvetica, sans-serif;
+}
+
+input {
+  font-size: 1.2rem;
+  width: 100%;
+  color: black;
+}
