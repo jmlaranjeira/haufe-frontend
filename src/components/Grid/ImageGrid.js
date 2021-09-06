@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { getImages } from "../../actions/character";
 import { ImageGridItem } from "./ImageGridItem";
@@ -7,7 +7,9 @@ export const ImageGrid = () => {
     
     const dispatch = useDispatch();
 
-    dispatch( getImages() );
+    useEffect( () => {
+        dispatch( getImages() );
+    }, []);
 
     const { data } = useSelector(state => state.character);
 
