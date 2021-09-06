@@ -14,7 +14,7 @@ export const startLogin = ( username, password ) => {
 
             dispatch( login({
                 uid: body.uid,
-                name: body.name
+                token: body.token
             }) )
         } else {
             Swal.fire('Error', body.msg, 'error');
