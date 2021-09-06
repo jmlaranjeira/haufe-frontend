@@ -12,14 +12,14 @@ export const LoginScreen = () => {
 
     
     const [ formLoginValues, handleLoginInputChange ] = useForm({
-        lUsername: 'jmlaranjeira',
-        lPassword: '123456'
+        lUsername: '',
+        lPassword: ''
     });
 
     const [ formRegisterValues, handleRegisterInputChange ] = useForm({
-        rUsername: 'jmlaranjeira',
-        rPassword1: '123456',
-        rPassword2: '123456'
+        rUsername: '',
+        rPassword1: '',
+        rPassword2: ''
     });
     
     const { lUsername, lPassword } = formLoginValues;
